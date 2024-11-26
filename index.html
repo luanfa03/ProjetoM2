@@ -11,6 +11,30 @@
 
         <link href="style.css" rel="stylesheet" type="text/css"/>
         <!-- Link para o arquivo CSS externo para estilização -->
+
+        <style>
+            /* Estilo do botão "i" */
+            .info-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                font-size: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            .info-btn:hover {
+                background-color: #0056b3;
+            }
+        </style>
     </head>
     <body>
         
@@ -51,6 +75,14 @@
                 Excluir Paciente
             </a>
         </div>
+           <!-- Botão "i" para informações -->
+        <button class="info-btn" onclick="mostrarInformacao()">i</button>
         
+        <script>
+            // Função para exibir a mensagem de informação
+            function mostrarInformacao() {
+                alert("Este software foi desenvolvido para facilitar o agendamento de pacientes em um hospital.");
+            }
+        </script>        
     </body>
 </html>
